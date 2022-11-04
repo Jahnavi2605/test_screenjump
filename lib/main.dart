@@ -22,29 +22,40 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      appBar: AppBar(
+        backgroundColor: Colors.black26,
+        centerTitle: true,
+        title: Text(
+          'We\'re here to Help!',
+          style: GoogleFonts.caveat(
+            fontSize: 35,
+            fontWeight: FontWeight.w800,
+            color: Colors.black,
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => Home()));
+          },
+          icon: Icon(Icons.arrow_back_ios_rounded, color: Colors.black,),
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.home_rounded,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Home()));
+            },
+          )
+        ],
+      ),
+          body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Container(
-            color: Colors.pink,
-            height: 50.0,
-            alignment: Alignment.center,
-          ),
-          Container(
-            color: Colors.pinkAccent,
-            height: 50.0,
-            alignment: Alignment.center,
-            child: Text('We\'ll make it easy...',
-              textAlign: TextAlign.center,
-              style: GoogleFonts.poorStory(
-                textStyle: Theme.of(context).textTheme.headline4,
-                fontSize: 40,
-                fontWeight: FontWeight.w900,
-                color: Colors.black,
-              ),
-            ),
-          ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -95,7 +106,36 @@ class Unclepage extends StatefulWidget {
 class _UnclepageState extends State<Unclepage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(appBar: AppBar(
+      backgroundColor: Colors.black26,
+      centerTitle: true,
+      title: Text(
+        'Welcome Owner!',
+        style: GoogleFonts.caveat(
+          fontSize: 35,
+          fontWeight: FontWeight.w800,
+          color: Colors.black,
+        ),
+      ),
+      leading: IconButton(
+        onPressed: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => Home()));
+        },
+        icon: Icon(Icons.arrow_back_ios_rounded, color: Colors.black,),
+      ),
+      actions: <Widget>[
+        IconButton(
+          icon: Icon(Icons.home_rounded,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => Home()));
+          },
+        )
+      ],
+    ),
       body: Center(
         child: FlatButton(
           color: Colors.blueAccent,
@@ -119,29 +159,40 @@ class _StudentpageState extends State<Studentpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black26,
+        centerTitle: true,
+        title: Text(
+          'Welcome Student!',
+          style: GoogleFonts.caveat(
+            fontSize: 35,
+            fontWeight: FontWeight.w800,
+            color: Colors.black,
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => Home()));
+          },
+          icon: Icon(Icons.arrow_back_ios_rounded, color: Colors.black,),
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.home_rounded,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Home()));
+            },
+          )
+        ],
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Container(
-            color: Colors.teal,
-            height: 50.0,
-            alignment: Alignment.center,
-          ),
-          Container(
-            color: Colors.tealAccent,
-            height: 50.0,
-            alignment: Alignment.center,
-            child: Text('Student Access',
-              textAlign: TextAlign.center,
-              style: GoogleFonts.poorStory(
-                textStyle: Theme.of(context).textTheme.headline4,
-                fontSize: 40,
-                fontWeight: FontWeight.w900,
-                color: Colors.black,
-              ),
-            ),
-          ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -196,6 +247,36 @@ class _StudentprintpageState extends State<Studentprintpage> {
     ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
 
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black26,
+        centerTitle: true,
+        title: Text(
+          'Print Details',
+          style: GoogleFonts.caveat(
+            fontSize: 35,
+            fontWeight: FontWeight.w800,
+            color: Colors.black,
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => Studentpage()));
+          },
+          icon: Icon(Icons.arrow_back_ios_rounded, color: Colors.black,),
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.home_rounded,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Home()));
+            },
+          )
+        ],
+      ),
       body: Center(
         child: ElevatedButton(
           style: style,
@@ -218,6 +299,36 @@ class _StudentshoppageState extends State<Studentshoppage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black26,
+        centerTitle: true,
+        title: Text(
+          'Stock Availability',
+          style: GoogleFonts.caveat(
+            fontSize: 35,
+            fontWeight: FontWeight.w800,
+            color: Colors.black,
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => Studentpage()));
+          },
+          icon: Icon(Icons.arrow_back_ios_rounded, color: Colors.black,),
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.home_rounded,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Home()));
+            },
+          )
+        ],
+      ),
       body: Center(
         child: FlatButton(
           color: Colors.blueAccent,
